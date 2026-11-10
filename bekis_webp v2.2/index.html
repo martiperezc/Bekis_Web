@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bekis Vegetales Gourmet: descubre tres preparaciones de zucchini y encuentra inspiración para disfrutarlas.">
+  <meta name="theme-color" content="#24452f">
+  <title>Bekis | Vegetales Gourmet</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip" href="#inicio">Saltar al contenido</a>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Menú principal">
+      <a class="brand" href="#inicio" aria-label="Bekis, ir al inicio"><img src="public/assets/Logo_Bekis_transparente.png" alt="Logotipo oficial de Bekis Vegetales Gourmet"></a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#inicio">Inicio</a><a href="#productos">Productos</a><a href="#recetas">Recetas</a><a href="#historia">Nuestra historia</a><a href="#comprar">Dónde comprar</a><a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+  <main id="inicio">
+    <!-- PORTADA V2 PANORAMICA: fotografía como fondo a ancho completo.
+         Para cambiarla, sustituir hero-tres-frascos-desktop.webp y hero-tres-frascos-movil.webp
+         dentro de public/assets/; los estilos están al final de styles.css. -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">BEKIS · VEGETALES GOURMET</p>
+          <h1 id="hero-title">Un pequeño toque.<br><em>Un gran sabor.</em></h1>
+          <p>Descubre una forma distinta de disfrutar el zucchini: tres propuestas gourmet para transformar tus comidas y compartir nuevos sabores.</p>
+          <div class="actions">
+            <a class="btn gold" href="#productos">Conoce nuestros productos <span aria-hidden="true">→</span></a>
+            <a class="btn outline" href="#recetas">Explora recetas</a>
+          </div>
+          <p class="hero-foot">Inspiración para tu mesa · Tres variedades</p>
+        </div>
+      </div>
+    </section>
+    <!-- V2.2 / NUESTRA COLECCIÓN: composición editorial de cuatro columnas -->
+    <section class="products editorial-products" id="productos" aria-labelledby="productos-title">
+      <div class="wrap products-layout">
+        <div class="products-intro">
+          <h2 id="productos-title">Nuestros Productos</h2>
+          <span class="gold-line" aria-hidden="true"></span>
+          <p class="products-lead">Tres sabores, una misma pasión:<br>la frescura de la naturaleza.</p>
+          <div class="brand-benefits" aria-label="Valores presentados en la propuesta visual">
+            <div class="benefit"><span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"><path d="M12 37C12 17 22 11 39 8c-2 20-9 30-27 29Z"/><path d="M12 37c6-11 13-17 22-23"/><path d="m20 28-2-8m8 1 7 2"/></svg></span><span>100%<br>Natural</span></div>
+            <div class="benefit"><span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 39S7 27 7 17c0-11 14-13 17-3 3-10 17-8 17 3 0 10-17 22-17 22Z"/></svg></span><span>Sin<br>conservantes</span></div>
+            <div class="benefit"><span class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="m24 5 5 4 7 .5 1 7 5 5-3 6 1 7-7 2-5 6-6-3-7 1-3-7-6-5 3-6-1-7 7-2Z"/><circle cx="24" cy="24" r="10"/><path d="m24 16 2.4 5 5.4.7-4 3.8 1 5.4-4.8-2.5-4.8 2.5 1-5.4-4-3.8 5.4-.7Z"/></svg></span><span>Hecho<br>en Ecuador</span></div>
+          </div>
+          <!-- Validar las afirmaciones de este grupo antes de publicar. -->
+        </div>
+        <div class="product-grid editorial-product-grid">
+          <article class="product-card"><div class="product-image"><img src="public/assets/Frasco-Agridulce.png" alt="Presentación de Bekis zucchini amarillo agridulce tropical" loading="lazy"></div><div class="product-content"><h3>Zucchini amarillo<br>agridulce tropical</h3><p>El dulce del zucchini amarillo y la frescura de la piña y maracuyá, en un equilibrio perfecto.</p><a class="text-link" href="#comprar">Ver más <span aria-hidden="true">→</span></a></div></article>
+          <article class="product-card"><div class="product-image"><img src="public/assets/Frasco-Picante.png" alt="Presentación de Bekis zucchini toque picante" loading="lazy"></div><div class="product-content"><h3>Mix de Zucchinis<br>toque picante</h3><p>Una combinación irresistible de sabores, con el toque justo de picante.</p><a class="text-link" href="#comprar">Ver más <span aria-hidden="true">→</span></a></div></article>
+          <article class="product-card"><div class="product-image"><img src="public/assets/Fraco-tradicional.png" alt="Presentación de Bekis zucchini amarillo receta tradicional" loading="lazy"></div><div class="product-content"><h3>Zucchini amarillo<br>Receta Tradicional</h3><p>El sabor auténtico del zucchini amarillo, con especias naturales y un toque artesanal.</p><a class="text-link" href="#comprar">Ver más <span aria-hidden="true">→</span></a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- V2.2 / IDEAS PARA DISFRUTAR: resumen de portada, recetario expandible -->
+    <section class="recipes editorial-recipes" id="recetas" aria-labelledby="recetas-title">
+      <div class="recipe-feature">
+        <div class="recipe-feature-photo"><img src="public/assets/Recetas.png" alt="Tabla gourmet con tostadas, quesos y zucchini Bekis" loading="lazy"></div>
+        <div class="recipe-feature-copy">
+          <p class="eyebrow">IDEAS PARA DISFRUTAR</p>
+          <h2 id="recetas-title">Recetas y<br>experiencias</h2>
+          <p>Atrévete a darle un toque especial a tus platos. Nuestros zucchinis son el complemento perfecto para quesos, carnes, ensaladas, sándwiches y más.</p>
+          <button class="btn gold" type="button" id="show-recipes" aria-expanded="false" aria-controls="recetario-detallado">VER RECETAS <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="recipe-feature-message"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 45V32C6 31 7 17 17 17c1-12 17-15 22-5 9-4 19 4 15 15 8 7 2 17-7 17v12H15Z"/><path d="M15 45h32M15 56h32"/></svg><h3>El toque gourmet<br>en tu mesa</h3><p>Perfectos para compartir,<br>para tus reuniones especiales<br>o simplemente para consentirte<br>en el día a día.</p><span class="message-flourish" aria-hidden="true">— ❧ —</span></div>
+      </div>
+      <div class="wrap recipe-drawer" id="recetario-detallado" hidden>
+        <div class="recipe-drawer-head"><div><p class="eyebrow">RECETARIO BEKIS</p><h2>Elige tu próxima receta</h2><p>Tres recetas detalladas con ingredientes en gramos y preparación paso a paso.</p></div><button class="close-recipes" id="hide-recipes" type="button">Cerrar recetas ×</button></div>
+        <div class="recipe-grid" id="recipe-grid"></div>
+      </div>
+    </section>
+
+    <!-- V2.2 / NUESTRA HISTORIA: tres columnas, sin botón -->
+    <section class="story editorial-story" id="historia" aria-labelledby="historia-title">
+      <div class="wrap story-editorial-grid">
+        <div class="story-editorial-text"><h2 id="historia-title">Nuestra Historia</h2><span class="gold-line" aria-hidden="true"></span><p>Bekis nace del amor por los vegetales y la búsqueda de sabores auténticos. Creemos en el poder de lo natural, en la frescura de lo local y en la magia de lo artesanal.</p><p>Cada frasco es el resultado de un proceso cuidadoso, con ingredientes de alta calidad y el compromiso de llevar a tu mesa lo mejor de nuestra tierra.</p></div>
+        <div class="story-editorial-photo"><img src="public/assets/Zucchini-historia.png" alt="Planta de zucchini con flor amarilla en el cultivo" loading="lazy"></div>
+        <div class="story-editorial-values">
+          <div class="story-value"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 39c0-22 13-28 31-30-2 19-8 31-31 30ZM9 39c9-13 17-20 27-24"/></svg><span>Ingredientes naturales<br>y seleccionados</span></div>
+          <div class="story-value"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M24 40S5 27 5 17C5 6 19 5 24 15 29 5 43 6 43 17c0 10-19 23-19 23Z"/></svg><span>Elaboración artesanal</span></div>
+          <div class="story-value"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 43C5 31 6 18 9 11c4-9 12-8 15-2 3-6 11-7 15 2 3 7 4 20-15 32Z"/><path d="M24 30s-7-4-7-9c0-6 6-7 7-2 1-5 7-4 7 2 0 5-7 9-7 9Z"/></svg><span>Apoyamos la producción<br>local y sostenible</span></div>
+          <div class="story-value"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 44V17M23 32C9 30 8 22 8 15c11 0 15 5 15 17Zm0-10c0-11 5-17 14-18 0 11-4 17-14 18Zm0 19c0-11 5-15 15-16 0 10-5 16-15 16Z"/></svg><span>Hecho con pasión<br>en Ecuador</span></div>
+      </div>
+    </section>
+    <section class="buy section" id="comprar"><div class="wrap buy-inner"><p class="eyebrow">TU PRÓXIMO SABOR FAVORITO</p><h2>¿Listo para descubrir Bekis?</h2><p>Consulta las variedades disponibles o solicita información comercial para tu tienda o restaurante.</p><div class="actions center"><a class="btn gold" id="whatsapp-link" href="#contacto">Consultar por WhatsApp ↗</a><a class="btn outline-light" href="mailto:">Información comercial ↗</a></div><p class="small muted" id="buy-note">Los datos de contacto estarán habilitados cuando se confirmen los canales oficiales.</p></div></section>
+  </main>
+  <footer id="contacto"><div class="wrap footer-grid"><div><img class="footer-logo" src="public/assets/Logo_Bekis_transparente.png" alt="Bekis Vegetales Gourmet"><p>Sabores que conectan con lo natural.</p></div><div><h3>Explora</h3><a href="#productos">Productos</a><a href="#recetas">Recetas</a><a href="#historia">Nuestra historia</a></div><div><h3>Conecta con Bekis</h3><div id="social-links" class="socials"><span>Redes oficiales próximamente</span></div><p class="small">Para pedidos y consultas comerciales, utiliza nuestros canales una vez publicados.</p></div></div><div class="wrap bottom"><small>© <span id="year"></span> Bekis Vegetales Gourmet.</small></div></footer>
+  <!-- Botón global: se activa automáticamente al ingresar el número en script.js (CONFIG.whatsapp). -->
+  <a class="whatsapp-float is-unconfigured" id="whatsapp-float" href="#contacto" aria-label="Contactar a Bekis por WhatsApp" title="Configura el número oficial de WhatsApp para activar este acceso"><svg viewBox="0 0 32 32" width="27" height="27" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16 .8A15.2 15.2 0 0 0 3 23.9L.9 31l7.3-1.9A15.2 15.2 0 1 0 16 .8Zm0 27.6c-2.5 0-4.9-.7-7-2.1l-.5-.3-4.3 1.1 1.2-4.2-.3-.6a12.5 12.5 0 1 1 10.9 6.1Zm7-9.4c-.4-.2-2.4-1.2-2.8-1.3-.4-.1-.7-.2-1 .2-.3.4-1.1 1.3-1.3 1.5-.3.2-.5.3-.9.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.7-.8.5-.7c.1-.2 0-.5 0-.7l-1.3-3.1c-.4-.8-.7-.7-1-.7h-.8c-.3 0-.8.1-1.2.5-.4.4-1.5 1.5-1.5 3.6 0 2.2 1.6 4.3 1.8 4.6.2.3 3.1 4.8 7.6 6.5 1.1.5 2 .8 2.7 1 1.1.4 2.1.3 2.9.2.9-.1 2.4-1 2.8-1.9.4-1 .4-1.8.3-2-.1-.2-.4-.3-.8-.5Z"/></svg><span>WhatsApp</span></a>
+  <dialog id="recipe-dialog" aria-label="Receta detallada"><button class="dialog-close" aria-label="Cerrar receta" id="close-dialog">×</button><div id="dialog-content"></div></dialog>
+</body>
+</html>
